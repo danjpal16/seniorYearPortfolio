@@ -1,0 +1,84 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000000;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+    }
+
+    .bg-gradient {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+      /* Use a large pseudo-element for the gradient */
+      overflow: hidden;
+    }
+
+    .bg-gradient::before {
+      content: "";
+      position: absolute;
+      top: -50vh; left: -50vw;
+      width: 200vw; height: 200vh;
+      background: linear-gradient(0deg, #4b0082 50%, #000 50%);
+      z-index: 0;
+      animation: spin 10s linear infinite;
+      will-change: transform;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      height: 100vh;
+      width: 100vw;
+      display: grid;
+      place-content: center;
+      text-align: center;
+      line-height: 1.1;
+      background: none;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 4rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 0 0 40px rgba(255, 255, 255, 0.8), 0 0 80px rgba(255, 255, 255, 0.6);
+      animation: textAnimation 5s ease-in-out infinite;
+      z-index: 2;
+    }
+    
+    h1 a {
+        color: inherit;
+    }
+
+    @keyframes textAnimation {
+      0% {
+        color: #ffffff;
+        text-shadow: 0 0 60px rgba(255, 255, 255, 0.7), 0 0 120px rgba(255, 255, 255, 0.6);
+      }
+      50% {
+        color: #4b0082;
+        text-shadow: 0 0 80px rgba(75, 0, 130, 0.8), 0 0 160px rgba(75, 0, 130, 0.6);
+      }
+      100% {
+        color: #ffffff;
+        text-shadow: 0 0 60px rgba(255, 255, 255, 0.7), 0 0 120px rgba(255, 255, 255, 0.6);
+      }
+    }
