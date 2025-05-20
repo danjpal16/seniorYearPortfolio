@@ -81,6 +81,19 @@ footer {
     bottom: 0;
 }
 
+.opening h3{
+  padding:0;
+  margin:0;
+  color: #2e0854;
+  font-weight:600;
+}
+
+.opening ul li{
+  padding:0;
+  margin:0;
+  color: black;
+}
+
 h1{
   font-size:60px;
   text-align:center;
