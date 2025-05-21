@@ -7,14 +7,7 @@ body {
     background-color: black;
     color: black;
 }
-header {
-    background-color: #2e0854;
-    padding: 20px;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    color: #d8b9ff;
-}
+
 
 .row {
     display: flex;
