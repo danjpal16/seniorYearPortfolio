@@ -8,6 +8,16 @@ body {
     color: black;
 }
 
+.navbar {
+  background-color: #2e0854;
+  color: #d8b9ff;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
 
 .row {
     display: flex;
@@ -82,6 +92,19 @@ footer {
 }
 
 .opening ul li{
+  padding:0;
+  margin:0;
+  color: black;
+}
+
+.opening2 h3{
+  padding:0;
+  margin:0;
+  color: #2e0854;
+  font-weight:600;
+}
+
+.opening2 ul li{
   padding:0;
   margin:0;
   color: black;
