@@ -1,21 +1,23 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Comic Neue", cursive;
     font-weight: 400;
     font-style: normal;
-    background-color: black;
+    background: linear-gradient(to right, black, rgb(43, 42, 42));
     color: black;
 }
 
 .navbar {
-  background-color: #2e0854;
+  background: linear-gradient(to right, #2e0854, #6a3093);
   color: #d8b9ff;
   text-align: center;
   padding: 15px;
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+.navbar, .navbar a, .navbar-brand, .nav-link {
+  color: #d8b9ff !important;
 }
 
 
@@ -50,7 +52,7 @@ body {
     padding: 20px;
 }
 .portfolio-item {
-    background-color: #1a0a3d;
+    background: linear-gradient(to right, #2e0854, #6a3093);
     border: 2px solid #b19cd9;
     border-radius: 10px;
     margin: 10px;
@@ -74,14 +76,26 @@ body {
 .portfolio-item p {
     color: #c0a3ff;
 }
+
+
 footer {
-    background-color: #2e0854;
+    background: linear-gradient(to right, #2e0854, #6a3093);
     color: #d8b9ff;
     text-align: center;
     padding: 15px;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.opening {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.opening2 {
+  font-weight: 400;
+  font-style: normal;
 }
 
 .opening h3{
@@ -255,4 +269,56 @@ h1{
     left:50px;
     right:inherit;
   }
+}
+
+/* Example: Hero Section */
+.hero {
+  background: linear-gradient(to right, #2e0854, #6a3093);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+.hero .btn {
+  background: #d8b9ff;
+  color: #2e0854;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Example: Typography and Spacing */
+.opening, .opening2, .timeline {
+  margin-bottom: 40px;
+}
+
+/* Example: Navbar Improvement */
+.navbar {
+  background-color: #2e0854;
+}
+.navbar-brand, .nav-link {
+  color: #d8b9ff !important;
+}
+.nav-link:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+/* Example: Card/Content Styling */
+.bg-white {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.bg-white:hover {
+  transform: translateY(-5px);
 }
