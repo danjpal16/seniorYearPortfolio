@@ -91,6 +91,7 @@ footer {
 .opening {
   font-weight: 400;
   font-style: normal;
+  padding-bottom: 10rem;
 }
 
 .opening2 {
@@ -134,6 +135,7 @@ h1{
   padding:40px 0;
   width:1000px;
   box-sizing:border-box;
+  padding-bottom: 7rem;
 }
 .timeline:before{
   content:'';
@@ -321,4 +323,8 @@ h1{
 }
 .bg-white:hover {
   transform: translateY(-5px);
+}
+
+.timelineimgs {
+  width: 100%;
 }
